@@ -4,7 +4,11 @@ const HomePage = () => {
   return (
     <div>
       <HeaderComponent />
-      <div></div>
+      <div>
+        <p>welcome to our stores</p>
+      </div>
     </div>
   );
 };
+
+export default HomePage;
