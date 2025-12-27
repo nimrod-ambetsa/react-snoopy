@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 
 const HeaderComponent = () => {
@@ -8,8 +9,8 @@ const HeaderComponent = () => {
         <p className="">Refine stores</p>
       </div>
       <div className="h-20 text-black flex px-4 flex-row align-middle border-b-2 border-gray-200 uppercase mx-auto font-bold items-center">
-        <ul className="flex items-center justify-end space-x-10 w-full">
-          <li>
+        <div className="flex items-center justify-end space-x-10 w-full">
+          <div>
             <input
               type="search"
               className="border px-2 py-1 border-gray-200 rounded-md"
@@ -17,12 +18,13 @@ const HeaderComponent = () => {
               id=""
               placeholder="search"
             />
-          </li>
-          <li>shop</li>
-          <li>cart</li>
-          <li>Account</li>
-          <li>favourites</li>
-        </ul>
+          </div>
+          <nav className="space-x-10">
+            <NavLink to="/shop">shop</NavLink>
+            <NavLink to="#">cart</NavLink>
+            <NavLink to="#">Account</NavLink>
+          </nav>
+        </div>
       </div>
     </div>
   );

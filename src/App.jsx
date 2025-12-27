@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router";
 
 import "./App.css";
 
 import HomePage from "./pages/Homepage";
+import ProductList from "./pages/ProductList";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/shop" element={<ProductList />} />
+      </Routes>
     </>
   );
 }
