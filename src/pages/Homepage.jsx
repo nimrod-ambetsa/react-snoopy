@@ -1,6 +1,6 @@
 import HeaderComponent from "../components/HeaderComponent";
 import SidePanel from "../components/SidePanel";
-import homeImage from "../../public/images/unrivaledmarijuana-aUe9RCFFcjU-unsplash.jpg";
+import homeImage from "../images/home image.jpg";
 
 const HomePage = () => {
   return (

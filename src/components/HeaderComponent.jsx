@@ -15,14 +15,14 @@ const HeaderComponent = () => {
               type="search"
               className="border px-2 py-1 border-gray-200 rounded-md"
               name="search"
-              id=""
               placeholder="search"
             />
           </div>
           <nav className="space-x-10">
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/shop">shop</NavLink>
-            <NavLink to="#">cart</NavLink>
-            <NavLink to="#">Account</NavLink>
+            <NavLink to="/cart">cart</NavLink>
+            <NavLink to="/account">Account</NavLink>
           </nav>
         </div>
       </div>
