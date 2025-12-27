@@ -21,6 +21,7 @@ const HeaderComponent = () => {
           <li>shop</li>
           <li>cart</li>
           <li>Account</li>
+          <li>favourites</li>
         </ul>
       </div>
     </div>
