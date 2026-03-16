@@ -21,6 +21,7 @@ const HeaderComponent = () => {
           <nav className="space-x-10">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/shop">shop</NavLink>
+            <NavLink to="/cart">About us</NavLink>
             <NavLink to="/cart">cart</NavLink>
             <NavLink to="/account">Account</NavLink>
           </nav>
